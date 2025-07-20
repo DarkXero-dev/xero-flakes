@@ -11,5 +11,5 @@ alias ncg="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && su
 
 Steam
 
-- CyberPunk : %command% --launcher-skip --skipStartScreen
-- Doom DA : mangohud %command% +com_skipIntroVideo 1
+- CyberPunk : obs-gamecapture %command% --launcher-skip --skipStartScreen
+- Doom DA : obs-gamecapture mangohud %command% +com_skipIntroVideo 1
