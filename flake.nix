@@ -6,7 +6,7 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
-  outputs = { self, nixpkgs, nixos-flatpak, ... } @ inputs: let
+  outputs = { self, nixpkgs, nix-flatpak, ... } @ inputs: let
     inherit (self) outputs;
   in {
     nixosConfigurations = {
