@@ -13,7 +13,7 @@
       XeroNix = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          nixos-flatpak.noxosModules.nix-flatpak
+          nixos-flatpak.nixosModules.nix-flatpak
           ./nixos/configuration.nix
         ];
       };
