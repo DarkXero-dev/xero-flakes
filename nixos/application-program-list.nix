@@ -1,11 +1,5 @@
 { pkgs, ... }:
 
-services.flatpak.packages = [
-    { appId = "com.github.tchx84.Flatseal"; origin = "flathub";  }
-    "com.obsproject.Studio"
-    "im.riot.Riot"
-  ];
-
 {
   # System packages
   environment.systemPackages = with pkgs; [
