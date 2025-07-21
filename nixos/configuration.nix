@@ -39,11 +39,6 @@
   networking = {
     networkmanager.enable = true;
     useDHCP = false;
-    bridges."br0".interfaces = [ "enp17s0" ];
-    interfaces = {
-      br0.useDHCP = true;
-      enp17s0.useDHCP = true;
-    };
     hostName = "XeroNix"; # Define your hostname.
   };
 
