@@ -86,4 +86,46 @@
         ]
     ))
   ];
+
+   services.flatpak = {
+    # List the Flatpak applications you want to install
+    # Use the official Flatpak application ID (e.g., from flathub.org)
+    packages = [
+      "com.vivaldi.Vivaldi"             # Web Browser
+      "org.ferdium.Ferdium"             # All in one Web
+      "com.rtosta.zapzap"               # whatsapp client
+      "com.usebottles.bottles"          # Games/Apps Manager
+      "com.vysp3r.ProtonPlus"           # Manage Proton GE
+      "io.missioncenter.MissionCenter"  # Task Manager Clone
+      "io.github.flattool.Warehouse"    # Manage flatpaks
+      "de.schmidhuberj.tubefeeder"      # watch YT videos
+      "org.filezillaproject.Filezilla"  # FTP/SCP Manager
+
+      # OBS Studio Mega Pack
+
+      "com.obsproject.Studio"
+      "com.obsproject.Studio.Plugin.DroidCam"
+      "com.obsproject.Studio.Plugin.waveform"
+      "com.obsproject.Studio.Plugin.DistroAV"
+      "com.obsproject.Studio.Plugin.WebSocket"
+      "com.obsproject.Studio.Plugin.Gstreamer"
+      "com.obsproject.Studio.Plugin.SourceClone"
+      "com.obsproject.Studio.Plugin.SourceRecord"
+      "com.obsproject.Studio.Plugin.ScaleToSound"
+      "com.obsproject.Studio.Plugin.OBSVkCapture"
+      "com.obsproject.Studio.Plugin.AdvancedMasks"
+      "com.obsproject.Studio.Plugin.CompositeBlur"
+      "com.obsproject.Studio.Plugin.SceneSwitcher"
+      "com.obsproject.Studio.Plugin.GStreamerVaapi"
+      "com.obsproject.Studio.Plugin.MoveTransition"
+      "com.obsproject.Studio.Plugin.TransitionTable"
+      "org.freedesktop.LinuxAudio.Plugins.x42Plugins"
+      "com.obsproject.Studio.Plugin.AitumMultistream"
+      "com.obsproject.Studio.Plugin.BackgroundRemoval"
+      "org.freedesktop.Platform.VulkanLayer.OBSVkCapture"
+    ];
+
+    # Optional: Automatically update Flatpaks when you run nixos-rebuild switch
+    update.onActivation = true;
+   };
 }
