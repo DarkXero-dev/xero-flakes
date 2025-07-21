@@ -119,10 +119,9 @@
       "com.obsproject.Studio.Plugin.GStreamerVaapi"
       "com.obsproject.Studio.Plugin.MoveTransition"
       "com.obsproject.Studio.Plugin.TransitionTable"
-      "org.freedesktop.LinuxAudio.Plugins.x42Plugins"
       "com.obsproject.Studio.Plugin.AitumMultistream"
       "com.obsproject.Studio.Plugin.BackgroundRemoval"
-      "org.freedesktop.Platform.VulkanLayer.OBSVkCapture"
+      "org.freedesktop.Platform.VulkanLayer.OBSVkCapture/x86_64/24.08"
     ];
 
     # Optional: Automatically update Flatpaks when you run nixos-rebuild switch
