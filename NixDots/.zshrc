@@ -16,7 +16,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -132,6 +132,13 @@ alias l='eza -lah --color=always --group-directories-first --icons' # tree listi
 #available free memory
 alias free='free -mt'
 
+## WebDev
+alias hs='hugo server'
+alias hg='hugo && ./push.sh'
+
+alias mb='mkdocs build -c && ./push.sh'
+alias ms='mkdocs serve'
+
 #continue download
 alias wget='wget -c '
 
@@ -145,8 +152,9 @@ alias userlist='cut -d: -f1 /etc/passwd'
 alias rshell='systemctl --user restart plasma-plasmashell.service'
 
 #NixOS for software managment
-alias update='sudo nixos-rebuild switch --upgrade'
-alias nixsw='sudo nixos-rebuild switch'
+alias fpush='cd ~/XeroNix/ && sh push.sh'
+alias nixsw='cd ~/XeroNix/ && sudo nixos-rebuild switch --flake .#XeroNix'
+alias update='cd ~/XeroNix/ && sudo nixos-rebuild switch --flake .#XeroNix --upgrade'
 
 #Bash aliases
 alias mkfile='touch '
@@ -161,6 +169,9 @@ alias xff='clear && fastfetch --config ~/.config/fastfetch/stationxero.jsonc'
 #youtube-dl
 alias yta-best="yt-dlp --extract-audio --audio-format best "
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
+
+#Generations Manager
+alias ncg="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot"
 
 #GiT  command
 alias gcl='git clone '

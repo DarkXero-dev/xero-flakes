@@ -4,9 +4,10 @@ sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos
 sudo nix-channel --update
 sudo nixos-rebuild switch --upgrade
 
-# Switch
-sudo nixos-rebuild switch
-
+#NixOS Aliases
+alias fpush='cd ~/XeroNix/ && ./push.sh'
+alias nixsw='cd ~/XeroNix/ && sudo nixos-rebuild switch --flake .#XeroNix'
+alias update='cd ~/XeroNix/ && sudo nixos-rebuild switch --flake .#XeroNix --upgrade'
 alias ncg="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot"
 
 Steam
