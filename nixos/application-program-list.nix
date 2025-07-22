@@ -68,38 +68,23 @@
     kdePackages.qtstyleplugin-kvantum
     androidenv.androidPkgs.platform-tools
     kdePackages.plasma-browser-integration
-    (python3.withPackages (
-      ps:
-        with ps; [
-          pipx
-          mkdocs
-          mkdocs-macros
-          mkdocs-gitlab
-          mkdocs-get-deps
-          mkdocs-material
-          mkdocs-autorefs
-          mkdocs-rss-plugin
-          mkdocs-glightbox
-          mkdocs-redirects
-          mkdocs-awesome-nav
-          mkdocs-material-extensions
-        ]
-    ))
   ];
 
    services.flatpak = {
     # List the Flatpak applications you want to install
     # Use the official Flatpak application ID (e.g., from flathub.org)
     packages = [
+      "com.rtosta.zapzap"               # whatsapp
       "com.vivaldi.Vivaldi"             # Web Browser
       "org.ferdium.Ferdium"             # All in one Web
-      "com.rtosta.zapzap"               # whatsapp client
-      "com.usebottles.bottles"          # Games/Apps Manager
+      "com.spotify.Client"              # Streaming Music
       "com.vysp3r.ProtonPlus"           # Manage Proton GE
-      "io.missioncenter.MissionCenter"  # Task Manager Clone
-      "io.github.flattool.Warehouse"    # Manage flatpaks
+      "com.usebottles.bottles"          # Games/Apps Mangr
+      "com.chatterino.chatterino"       # Twitch Chat App
       "de.schmidhuberj.tubefeeder"      # watch YT videos
-      "org.filezillaproject.Filezilla"  # FTP/SCP Manager
+      "io.github.flattool.Warehouse"    # Manage flatpaks
+      "io.missioncenter.MissionCenter"  # Win Task Manager
+      "org.filezillaproject.Filezilla"  # FTP/SCP Transfer
 
       # OBS Studio Mega Pack
 
