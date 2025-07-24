@@ -153,8 +153,8 @@ alias rshell='systemctl --user restart plasma-plasmashell.service'
 
 #NixOS for software managment
 alias fpush='cd ~/XeroNix/ && sh push.sh'
-alias nixsw='cd ~/XeroNix/ && sudo nixos-rebuild switch --flake .#XeroNix'
-alias update='cd ~/XeroNix/ && sudo nixos-rebuild switch --flake .#XeroNix --upgrade'
+alias update='cd ~/XeroNix/ && sudo nix flake update'
+alias nixsw='cd ~/XeroNix/ && sudo nixos-rebuild switch --flake .#XeroNix && sh push.sh'
 
 #Bash aliases
 alias mkfile='touch '
