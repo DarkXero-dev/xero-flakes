@@ -22,7 +22,6 @@
     kernelParams = [
       "nvme"
       "quiet"
-      "splash"
     ];
 
     # Load and configure v4l2loopback for OBS Flatpak virtual camera
