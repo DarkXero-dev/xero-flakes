@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   imports = [
     # Include the results of the hardware scan.
-    /etc/nixos/hardware-configuration.nix
+    ./hardware-configuration.nix
     ./application-program-list.nix
     ./various-hdd-ssd-automounts.nix
     ./virtualization-virt-manager.nix
