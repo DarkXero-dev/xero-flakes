@@ -82,3 +82,20 @@ sudo chsh $USER -s /bin/zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 nixsw
 wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/.zshrc
+flatpak search Vivaldi
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+fastfetch
+git clone https://github.com/vinceliuice/Layan-kde.git
+cd Layan-kde/ && sh install.sh
+cd ~ && rm -Rf Layan-kde/
+cd ~ && git clone https://github.com/vinceliuice/Layan-gtk-theme.git && cd Layan-gtk-theme/ && sh install.sh -l -c dark -d $HOME/.themes
+cd ~ && rm -Rf Layan-gtk-theme/
+reboot
+corectrl
+sudo -E corectrl
+inxi -G
+reboot
+inxi -G

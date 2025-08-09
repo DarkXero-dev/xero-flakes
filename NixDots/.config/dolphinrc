@@ -1,5 +1,4 @@
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAAB9fwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAxAAAB9QAAAFQA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAAAgD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAIA////AAACPwAAAfUAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
@@ -15,7 +14,6 @@ DirHistory[$e]=$HOME/.var/app/
 [General]
 GlobalViewProps=false
 ShowFullPath=true
-ShowToolTips=true
 SortingChoice=CaseInsensitiveSorting
 Version=202
 ViewPropsTimestamp=2021,9,5,16,41,28.639
@@ -31,6 +29,9 @@ iconViewIconSize=64
 MenuBar=Disabled
 RestorePositionForNextInstance=false
 
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
 [Notification Messages]
 warnAboutRisksBeforeActingAsAdmin=false
 
@@ -39,3 +40,7 @@ Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cur
 
 [VersionControl]
 enabledPlugins=Git
+
+[ViewPropertiesDialog]
+3 screens: Height=670
+3 screens: Width=373

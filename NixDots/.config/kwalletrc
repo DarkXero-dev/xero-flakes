@@ -7,4 +7,7 @@ Launch Manager=false
 Leave Manager Open=false
 Leave Open=false
 Prompt on Open=false
-Use One Wallet=false
+Use One Wallet=true
+
+[org.freedesktop.secrets]
+apiEnabled=true

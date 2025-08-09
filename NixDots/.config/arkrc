@@ -1,7 +1,9 @@
 [ExtractDialog]
 2 screens: Height=540
 2 screens: Width=1197
-DirHistory[$e]=$HOME/.var/app/,$HOME/Downloads/
+3 screens: Height=540
+3 screens: Width=1242
+DirHistory[$e]=/run/media/xero/Linux/,$HOME/.var/app/,$HOME/Downloads/
 
 [General]
 LockSidebar=true

@@ -317,3 +317,7 @@ stop current activity=Meta+S,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
+
+[yakuake]
+_k_friendly_name=Yakuake
+toggle-window-state=F12,F12,Open/Retract Yakuake

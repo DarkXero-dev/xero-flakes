@@ -136,8 +136,8 @@ ForegroundPositive=0,110,40
 ForegroundVisited=224,64,251
 
 [DirSelect Dialog]
-DirSelectDialog Size=915,540
-History Items[$e]=file:$HOME/Pictures
+DirSelectDialog Size=640,480
+History Items[$e]=file:$HOME/Pictures/Screenshots,file:$HOME/Pictures/Logos,file:$HOME/Music/Groovy,file:///mnt/Linux/Xero-OBS/Overlays,file:///mnt/Linux/Xero-OBS/Images,file:$HOME/Pictures,file:$HOME/Music,file:$HOME/Pictures,file:///mnt/Games/Steam,file:$HOME/Pictures
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x8c\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
@@ -183,6 +183,7 @@ ScreenScaleFactors=eDP-1=1;HDMI-A-1=1;
 XwaylandClientsScale=false
 
 [PreviewSettings]
+EnableRemoteFolderThumbnail=false
 MaximumRemoteSize=0
 
 [WM]

@@ -177,3 +177,6 @@ ex ()
   fi
 }
 
+
+# Created by `pipx` on 2025-07-12 21:32:52
+export PATH="$PATH:/home/xero/.local/bin"
